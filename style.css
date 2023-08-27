@@ -95,7 +95,7 @@ body{
 
 .container{
     display: flex;
-    align-items: center;
+    align-items: end;
 }
 
 .left{
@@ -121,13 +121,29 @@ body{
     height: 2.5rem;
 }
 
+.right{
+    background: var(--Dark_Blue);
+    border-radius: 10px;
+    color: var(--Pale_Blue);
+    padding: 2rem;
+    width: 35rem;
+    position: relative;
+}
+
 .space_remain{
     background: var(--Pale_Blue);
     color: var(--Very_Dark_Blue);
     display: flex;
     align-items: center;
-    width: 50%;
     border-radius: 7px;
+    position: absolute;
+    padding: 10px 0 10px 10px;
+}
+
+.space_remain p{
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 400;
 }
 
 .space_remain span{
@@ -136,15 +152,7 @@ body{
     height: 2rem;
     clip-path: polygon(100% 0, 0 0, 100% 100%);
     position: relative;
-    top: 2rem;
-}
-
-.right{
-    background: var(--Dark_Blue);
-    border-radius: 10px;
-    color: var(--Pale_Blue);
-    padding: 2rem;
-    width: 35rem;
+    top: 2.7rem;
 }
 
 .time{
