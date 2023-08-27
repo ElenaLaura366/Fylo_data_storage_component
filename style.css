@@ -91,6 +91,10 @@ body{
     align-items: center;
     font-family: 'Raleway', sans-serif;
     background: var(--Very_Dark_Blue);
+    background-image: url(images/bg-desktop.png), url(images/bg-mobile.png);
+    background-position: center 24rem, 100rem 100rem;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%;
 }
 
 .container{
@@ -125,19 +129,26 @@ body{
     background: var(--Dark_Blue);
     border-radius: 10px;
     color: var(--Pale_Blue);
-    padding: 2rem;
+    padding: 1.5rem;
     width: 35rem;
     position: relative;
+    margin-left: 1.5rem;
+}
+
+.right .special_paragraph{
+    margin-bottom: 10px;
 }
 
 .space_remain{
-    background: var(--Pale_Blue);
+    background: hsl(0, 0%, 100%);
     color: var(--Very_Dark_Blue);
     display: flex;
     align-items: center;
     border-radius: 7px;
     position: absolute;
     padding: 10px 0 10px 10px;
+    bottom: 7rem;
+    left: 23rem;
 }
 
 .space_remain p{
@@ -147,7 +158,7 @@ body{
 }
 
 .space_remain span{
-    background: var(--Pale_Blue);
+    background: hsl(0, 0%, 100%);
     width: 2rem;
     height: 2rem;
     clip-path: polygon(100% 0, 0 0, 100% 100%);
@@ -183,4 +194,9 @@ body{
 .GB{
     display: flex;
     justify-content: space-between;
+    margin-top: 5px;
+}
+
+.right .special_paragraph span{
+    font-weight: 700;
 }
